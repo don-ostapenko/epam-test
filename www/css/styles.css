@@ -1,0 +1,97 @@
+body {
+    background-color: #3E444A;
+}
+
+.row {
+  padding: 30px 0;
+}
+
+.table {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.far {
+  color: #007BFF;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.far:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+/* Модалка для добавления ведомости */
+#overlay-add {
+  display: flex;
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+}
+
+#modal-add {
+  align-self: center;
+  width: 350px;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+
+#modal-add div input,
+select {
+  width: 100%;
+  height: 50px!important;
+}
+
+/* Кнопки */
+#modal-add button {
+  margin: 0 10px 0 0;
+
+}
+
+#cancel-add {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cancel-add:hover {
+  background-color: #ffffff;
+  border: 1px solid #007BFF;
+  transition: 0.3s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+th[role=columnheader]:not(.no-sort):after {
+  margin-top: 0!important;
+}
+
+th {
+  padding-left: 25px!important;
+}
+
+td {
+  padding-left: 25px!important;
+}
